@@ -12,8 +12,7 @@
 		0A3840B8207682E600F2E01C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0A3840B6207682E600F2E01C /* Main.storyboard */; };
 		0A3840BA207682E600F2E01C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0A3840B9207682E600F2E01C /* Assets.xcassets */; };
 		0A3840BD207682E600F2E01C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0A3840BB207682E600F2E01C /* LaunchScreen.storyboard */; };
-		0A3840C8207682E600F2E01C /* Favorite_ThingsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A3840C7207682E600F2E01C /* Favorite_ThingsTests.swift */; };
-		0A3840D3207682E600F2E01C /* Favorite_ThingsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A3840D2207682E600F2E01C /* Favorite_ThingsUITests.swift */; };
+		0A3840E1207683D000F2E01C /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0A3840E0207683CF00F2E01C /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,11 +41,8 @@
 		0A3840BC207682E600F2E01C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0A3840BE207682E600F2E01C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0A3840C3207682E600F2E01C /* Favorite ThingsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Favorite ThingsTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		0A3840C7207682E600F2E01C /* Favorite_ThingsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Favorite_ThingsTests.swift; sourceTree = "<group>"; };
-		0A3840C9207682E600F2E01C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0A3840CE207682E600F2E01C /* Favorite ThingsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Favorite ThingsUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		0A3840D2207682E600F2E01C /* Favorite_ThingsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Favorite_ThingsUITests.swift; sourceTree = "<group>"; };
-		0A3840D4207682E600F2E01C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0A3840E0207683CF00F2E01C /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,8 +74,6 @@
 			isa = PBXGroup;
 			children = (
 				0A3840B1207682E600F2E01C /* Favorite Things */,
-				0A3840C6207682E600F2E01C /* Favorite ThingsTests */,
-				0A3840D1207682E600F2E01C /* Favorite ThingsUITests */,
 				0A3840B0207682E600F2E01C /* Products */,
 			);
 			sourceTree = "<group>";
@@ -97,6 +91,7 @@
 		0A3840B1207682E600F2E01C /* Favorite Things */ = {
 			isa = PBXGroup;
 			children = (
+				0A3840E0207683CF00F2E01C /* GoogleService-Info.plist */,
 				0A3840B2207682E600F2E01C /* AppDelegate.swift */,
 				0A3840B4207682E600F2E01C /* ViewController.swift */,
 				0A3840B6207682E600F2E01C /* Main.storyboard */,
@@ -105,24 +100,6 @@
 				0A3840BE207682E600F2E01C /* Info.plist */,
 			);
 			path = "Favorite Things";
-			sourceTree = "<group>";
-		};
-		0A3840C6207682E600F2E01C /* Favorite ThingsTests */ = {
-			isa = PBXGroup;
-			children = (
-				0A3840C7207682E600F2E01C /* Favorite_ThingsTests.swift */,
-				0A3840C9207682E600F2E01C /* Info.plist */,
-			);
-			path = "Favorite ThingsTests";
-			sourceTree = "<group>";
-		};
-		0A3840D1207682E600F2E01C /* Favorite ThingsUITests */ = {
-			isa = PBXGroup;
-			children = (
-				0A3840D2207682E600F2E01C /* Favorite_ThingsUITests.swift */,
-				0A3840D4207682E600F2E01C /* Info.plist */,
-			);
-			path = "Favorite ThingsUITests";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -233,6 +210,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0A3840BD207682E600F2E01C /* LaunchScreen.storyboard in Resources */,
+				0A3840E1207683D000F2E01C /* GoogleService-Info.plist in Resources */,
 				0A3840BA207682E600F2E01C /* Assets.xcassets in Resources */,
 				0A3840B8207682E600F2E01C /* Main.storyboard in Resources */,
 			);
@@ -268,7 +246,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0A3840C8207682E600F2E01C /* Favorite_ThingsTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -276,7 +253,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0A3840D3207682E600F2E01C /* Favorite_ThingsUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
