@@ -46,12 +46,15 @@ class ViewController: UIViewController {
     }
 
     @IBAction func pressedRed(_ sender: Any) {
+        docRef.updateData(["color": "red"])
     }
     
     @IBAction func pressedWhite(_ sender: Any) {
+        docRef.updateData(["color": "white"])
     }
     
     @IBAction func pressedBlue(_ sender: Any) {
+        docRef.updateData(["color": "blue"])
     }
     
     @IBAction func pressedFetchColorOnce(_ sender: Any) {
