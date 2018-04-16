@@ -13,6 +13,7 @@ class ViewController: UIViewController {
     
     var docRef: DocumentReference!
     var favoriteThingsListener: ListenerRegistration!
+    var favoriteNumber: Int = 3000
     
     @IBOutlet weak var numberLabel: UILabel!
     @IBOutlet weak var colorLabel: UILabel!
@@ -32,6 +33,9 @@ class ViewController: UIViewController {
 
             self.colorLabel.text = documentSnapshot!.get("color") as? String
             
+            self.favoriteNumber = (documentSnapshot!.get("number") as? Int)!
+            self.numberLabel.text = String(self.favoriteNumber)
+            
         })
     }
     
@@ -50,11 +54,11 @@ class ViewController: UIViewController {
     }
     
     @IBAction func pressedWhite(_ sender: Any) {
-        docRef.updateData(["color": "white"])
+        docRef.updateData(["color": "WHITE"])
     }
     
     @IBAction func pressedBlue(_ sender: Any) {
-        docRef.updateData(["color": "blue"])
+        docRef.updateData(["color": "BLUEEEEEE"])
     }
     
     @IBAction func pressedFetchColorOnce(_ sender: Any) {
@@ -71,10 +75,11 @@ class ViewController: UIViewController {
     }
     
     @IBAction func pressedIncrement(_ sender: Any) {
-        
+        docRef.updateData(["number": favoriteNumber + 1])
     }
     
     @IBAction func pressedDecrement(_ sender: Any) {
+        docRef.updateData(["number" : favoriteNumber - 1])
     }
     
     
